@@ -1,0 +1,242 @@
+:root {
+    --primary: #5E17EB;
+    --secondary: #004AAD;
+    --third: #FFDE59;
+    --white: #FFFFFF;
+    --red: #640C12;
+    --black: #101010;
+    --dark: #000000;
+
+    --lexend: "Lexend";
+    --montserrat: "Montserrat";
+    --poppins: "Poppins";
+}
+
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body{
+    overflow: hidden;
+}
+
+
+.header-container {
+    overflow: visible !important;
+}
+
+
+.testimonials {
+    background-color: var(--black);
+    padding: 30px;
+    width: 100%;
+    height: 68vh;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.testimonials p {
+    color: var(--white);
+    font-family: var(--montserrat);
+    font-size: 1.1em;
+}
+
+.testimonials p i {
+    font-size: 3em;
+    text-align: right;
+    color: var(--third);
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.user-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.user-card img {
+    width: 30%;
+    border-radius: 100%;
+}
+
+.quality i {
+    color: var(--third);
+}
+
+
+
+.contact{
+    padding: 100px 0;
+}
+.testimonial-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    flex-direction: column;
+}
+
+.contact-title h2 {
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    font-size: 3.8em;
+    text-align: center;
+    font-weight: 700;
+    color: var(--third);
+}
+
+.contact-title p {
+    color: #FFDE59;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+}
+
+.location, .mail, .phone{
+    background-color: var(--black);
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.location p, .mail a, .phone a{
+    text-decoration: none;
+    margin: 0;
+    font-size: 1.2em;
+    color: var(--white);
+    font-family: var(--lexend);
+}
+
+.location-card{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.location i,h3{
+    color: var(--third);
+}
+.location i{
+    font-size: 1.5em;
+}
+.location h3{
+    font-family: var(--montserrat);
+    font-size: 1.6em;
+    margin: 0 !important;
+}
+
+
+.mail i,h3{
+    color: var(--third);
+}
+.mail i{
+    font-size: 1.5em;
+}
+.mail h3{
+    font-family: var(--montserrat);
+    margin: 0 !important;
+    font-size: 1.6em;
+}
+
+
+.phone i,h3{
+    color: var(--third);
+}
+.phone i{
+    font-size: 1.6em;
+}
+.phone h3{
+    font-family: var(--montserrat);
+    margin: 0 !important;
+    font-size: 1.5em;
+}
+
+
+.contact-form{
+    background-color: #101010;
+    padding: 30px;
+    border-radius: 10px;
+}
+.contact-form h4{
+    font-family: var(--montserrat);
+    color: var(--third);
+    font-size: 2.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.contact-form p{
+    font-family: var(--lexend);
+    color: var(--white);
+    font-size: 1.1em;
+    text-align: justify;
+}
+.form-label{
+    font-family: var(--lexend);
+    color: var(--third);
+}
+.form-control{
+    padding: 12px 10px !important;
+    font-family: var(--poppins);
+}
+.contact-form form button{
+    background-color: var(--third);
+    font-family: var(--lexend);
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.contact-form form button i{
+    vertical-align: middle;
+}
+
+
+@media screen and (max-width: 750px){
+    .contact-title h2{
+        font-size: 2.4em;
+    }
+    .contact-container .row{
+        gap: 20px;
+    }
+    .contact-container .row .col-md-6{
+        width: 100% !important;
+    }
+    .contact-form{
+        padding: 20px 15px;
+    }
+    .contact-form h4{
+        font-size: 1.8em;
+    }
+
+    .free{
+        margin-bottom: 100px !important;
+    }
+
+    .testimonial-title h2 {
+        font-size: 2.4em;
+    }
+
+    .testimonial-title span {
+        font-size: 0.8em;
+        align-items: start;
+        width: 90%;
+    }
+
+    .testimonials {
+        height: auto;
+    }
+}

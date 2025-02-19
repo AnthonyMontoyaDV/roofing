@@ -1,0 +1,88 @@
+:root {
+    --primary: #5E17EB;
+    --secondary: #004AAD;
+    --third: #FFDE59;
+    --white: #FFFFFF;
+    --red: #640C12;
+    --black: #101010;
+    --dark: #000000;
+
+    --lexend: "Lexend";
+    --montserrat: "Montserrat";
+    --poppins: "Poppins";
+}
+
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body{
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1500px !important;
+    overflow: hidden !important;
+}
+
+
+.header-container {
+    overflow: visible !important;
+}
+
+
+.service-card{
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.service-content{
+    flex-direction: column;
+}
+.service-content-desc{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.image-container{
+    width: 100%;
+}
+.service-card .desc{
+    padding: 0;
+    height: auto;
+    text-align: left;
+}
+.service-card p{
+    font-size: 1.2em;
+}
+.service-desc p{
+    height: auto;
+    font-size: 1.2em;
+}
+.service-datails h3{
+    font-family: var(--montserrat);
+}
+.details{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.details h4{
+    font-family: var(--montserrat);
+    color: var(--third);
+}
+
+@media screen and (max-width: 750px){
+    .service-content-desc{
+        gap: 40px;
+    }
+
+    .free{
+        margin-bottom: 100px !important;
+    }
+}
